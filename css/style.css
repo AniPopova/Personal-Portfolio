@@ -4,5 +4,9 @@
 
 #main_page {
   background-color: palegoldenrod;
+  text-decoration: none;
   
 }
+ .box li a {
+  text-decoration: none;
+ }
