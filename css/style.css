@@ -7,15 +7,16 @@ html {
 }
 
 #main_page {
-  background: papayawhip;
-  padding-top: 50px;
+
+  /* padding-top: 50px; */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 section {
   margin-top: 70px;
   margin-bottom: 70px;
+  text-align: center;
   border: 2px black solid;
-  background: paleturquoise;
 }
 
 section ul li {
@@ -27,7 +28,7 @@ section ul li {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: lightskyblue;
+  background: rgb(7, 3, 142);
   position: fixed;
   top: 0;
   right: 0;
@@ -47,6 +48,9 @@ section ul li {
   background-color: bisque;
   color: black;
 }
+.logo {
+  text-align: left;
+  }
 .box{
   font-optical-sizing: 14px;
 }
@@ -56,7 +60,7 @@ img {
   height: 50%;
   margin: 5px;
   border-radius: 7px;
-  box-shadow: 12px -10px teal;
+  box-shadow: 5px -3px teal;
   cursor: pointer;
 
  }
@@ -70,7 +74,9 @@ img {
   padding: 20px;
   margin-bottom: 15px;
 }
-.img-box span {
-  border: 2px solid black;
-  display: flex;
+#contact {
+  font-size-adjust: var();
+}
+#contact img {
+  box-shadow: none;
 }
