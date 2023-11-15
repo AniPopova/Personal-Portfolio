@@ -1,13 +1,21 @@
 * {
   border: 5px  black thin;
 }
+
+html {
+  scroll-padding-top: 70px;
+}
+
 #main_page {
+  background: papayawhip;
+  padding-top: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 section {
   margin-top: 70px;
   margin-bottom: 70px;
   border: 2px black solid;
+  background: paleturquoise;
 }
 
 section ul li {
@@ -48,20 +56,21 @@ img {
   height: 50%;
   margin: 5px;
   border-radius: 7px;
+  box-shadow: 12px -10px teal;
   cursor: pointer;
 
  }
 
  .img-box{
   list-style: none;
-  width: 42.8%;
+  width: 32.8%;
   list-style: none;
   text-align: center;
   display: inline-block;
-  /* box-sizing: border-box; */
   padding: 20px;
   margin-bottom: 15px;
 }
-.img-box li {
-  display:flex;
+.img-box span {
+  border: 2px solid black;
+  display: flex;
 }
