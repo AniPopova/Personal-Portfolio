@@ -1,20 +1,28 @@
 * {
+  margin: 0;
+  padding: 0;
   border: 5px  black thin;
+  background-image: url(./images/optional.jpeg);
 }
 
 html {
   scroll-padding-top: 70px;
 }
 
+body {
+  background-image: url("optional.jpeg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
 #main_page {
-
-  /* padding-top: 50px; */
+  padding-top: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 section {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin: 70px 20px;
   text-align: center;
   border: 2px black solid;
 }
@@ -48,11 +56,11 @@ section ul li {
   background-color: bisque;
   color: black;
 }
-.logo {
+.direction {
   text-align: left;
   }
 .box{
-  font-optical-sizing: 14px;
+  font-size: 14px;
 }
 img {
   display: block;
@@ -60,22 +68,22 @@ img {
   height: 50%;
   margin: 5px;
   border-radius: 7px;
-  box-shadow: 5px -3px teal;
+  box-shadow: 5px -3px lightgrey;
   cursor: pointer;
-
  }
 
  .img-box{
-  list-style: none;
+  /* list-style: none; */
   width: 32.8%;
   list-style: none;
   text-align: center;
   display: inline-block;
   padding: 20px;
   margin-bottom: 15px;
+  position: flex-box;
 }
 #contact {
-  font-size-adjust: var();
+  font-size: 12px;
 }
 #contact img {
   box-shadow: none;
