@@ -32,6 +32,11 @@ section ul li {
   list-style: none;
   text-decoration: none;
 }
+
+.container {
+display: flex;
+}
+
  .menu {
   list-style: none;
   text-align: center;
@@ -39,11 +44,13 @@ section ul li {
   position: fixed;
   display: flex;
   flex-direction: row;
-  align-items: left;
+  align-items: center;
+  flex: 1;
   top: 0;
   right: 0;
   left: 0;
   cursor: pointer;
+  box-sizing: border-box; 
 }
 .menu li {
   float: right;
@@ -66,6 +73,13 @@ section ul li {
   font-size: 14px;
   border-style: none;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 img {
   display: block;
   width: 50%;
@@ -79,10 +93,7 @@ img {
  .img-box{
   list-style: none;
   width: 32.8%;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
   padding: 20px;
   margin-bottom: 15px;
   position: flex;
@@ -92,10 +103,10 @@ img {
   list-style: none;
   width: 32.8%;
   text-align: left;
-  display: inline-block;
+  display: block;
   padding: 20px;
   margin-bottom: 15px;
-  position: sticky;
+  position: flex;
 }
 
 .header .menu-icon {

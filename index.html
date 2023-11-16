@@ -1,112 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to my portfolio" />
+    <meta
+      name="keywords"
+      content="person, software engineer, developer, Ana, Bulgaria"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My portfolio | Ana Popova</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to my portfolio" />
-  <meta name="keywords" content="person, software engineer, developer, Ana, Bulgaria" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>My portfolio | Ana Popova</title>
-</head>
-
-<body id="main_page">
-  <header class="header">
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#home">Home</a></li>
-    </ul>
-  </header>
-  <main>
-    <section id="home">
-      <h3>Home</h3>
-      <div class="box">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
-          sunt commodi repellat qui eum repellendus assumenda, ut soluta,
-          officiis quisquam quae ea iusto obcaecati. Quidem, qui! Dignissimos
-          dolorum doloremque consequatur!
-        </p>
-        <ol class="direction">
-          <li>Education</li>
-          <li>Working experience</li>
-          <li>Certificates</li>
-          <li></li>
-        </ol>
-      </div>
-    </section>
-    <section id="about">
-      <h3>About</h3>
-      <br>
-      <div class="img-box">
-        <a href="https://www.alleycat.org/" target="_blank">
-          <img src="../images/cat2.jpg" alt="Link to organization for saving stray cats" />
-        </a>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos, officiis.
-        </p>
-      </div>
-      <!-- <div class="text-box">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos, officiis.
-        </p>
-      </div> -->
-      <br>
-      <div class="img-box">
-        <a href="https://www.healthline.com/nutrition/top-evidence-based-health-benefits-of-coffee#2.-May-be-linked-to-a-lower-risk-of-type-2-diabetes"
-          target="_blank">
-          <img src="../images/coffee.jpg" alt="A cup of coffee with milk and heart drawn on top of the cup" />
-        </a>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos, officiis.
-        </p>
-      </div>
-      <!-- <div class="text-box">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos, officiis.
-        </p>
-      </div> -->
-      <br>
-      <div class="img-box">
-        <a href="https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates/" target="_blank">
-          <img src="../images/pilates.jpg" alt="My favorite sport is pilates" />
-        </a>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos, officiis.
-        </p>
-      </div>
-      <!-- <div class="text-box">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos, officiis.
-        </p>
-      </div> -->
-    </section>
-    <section id="contact">
-      <h3>Contact</h3>
-      <ul>
-        <li>
-          <img class="logo" src="#" alt="LinkedIn logo" />
-          <a href="https://www.linkedin.com/in/ana-popova-5a4459b4/" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <img class="logo" src="#" alt="GitHub logo" />
-          <a href="https://github.com/AniPopova" target="_blank">GitHub</a>
-        </li>
+  <body id="main_page">
+    <header class="header">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#home">Home</a></li>
       </ul>
-    </section>
-  </main>
-  <footer id="footer">
-    <p>&copy; 2023 Ana Popova. Free to copy and use.</p>
-  </footer>
-</body>
-
+    </header>
+    <main>
+      <section id="home">
+        <h3>Home</h3>
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
+            sunt commodi repellat qui eum repellendus assumenda, ut soluta,
+            officiis quisquam quae ea iusto obcaecati. Quidem, qui! Dignissimos
+            dolorum doloremque consequatur!
+          </p>
+          <ol class="direction">
+            <li>Education</li>
+            <li>Working experience</li>
+            <li>Certificates</li>
+            <li></li>
+          </ol>
+        </div>
+      </section>
+      <section id="about">
+        <h3>About</h3>
+        <div class="container">
+          <span class="img-box">
+            <a href="https://www.alleycat.org/" target="_blank">
+              <img
+                src="../images/cat2.jpg"
+                alt="Link to organization for saving stray cats"
+              />
+            </a>
+          </span>
+          <span class="text-box">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, officiis.
+            </p>
+          </span>
+        </div>
+        <br />
+        <div class="container">
+          <span class="img-box">
+            <a
+              href="https://www.healthline.com/nutrition/top-evidence-based-health-benefits-of-coffee#2.-May-be-linked-to-a-lower-risk-of-type-2-diabetes"
+              target="_blank"
+            >
+              <img
+                src="../images/coffee.jpg"
+                alt="A cup of coffee with milk and heart drawn on top of the cup"
+              />
+            </a>
+          </span>
+          <span class="text-box">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, officiis.
+            </p>
+          </span>
+        </div>
+        <br />
+        <div class="container">
+          <span class="img-box">
+            <a
+              href="https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates/"
+              target="_blank"
+            >
+              <img
+                src="../images/pilates.jpg"
+                alt="My favorite sport is pilates"
+              />
+            </a>
+          </span>
+          <span class="text-box">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, officiis.
+            </p>
+          </span>
+        </div>
+      </section>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="container">
+          <span>
+            <ul>
+              <li>
+                <img class="logo" src="#" alt="LinkedIn logo" />
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ana-popova-5a4459b4/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </span>
+          <span>
+            <ul>
+              <li>
+                <img class="logo" src="#" alt="GitHub logo" />
+              </li>
+              <li>
+                <a href="https://github.com/AniPopova" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; 2023 Ana Popova. Free to copy and use.</p>
+    </footer>
+  </body>
 </html>
