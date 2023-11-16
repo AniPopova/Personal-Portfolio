@@ -10,22 +10,22 @@
   <title>My portfolio | Ana Popova</title>
 </head>
 
+
+</style>
+
 <body id="main_page">
-  <header>
-    <!-- <a href="" class="logo">CSS Nav</a>
+  <header class="header">
     <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> -->
-    <nav>
-      <ul class="navbar">       
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="navbar">
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#home">Home</a></li>
+    </ul>
   </header>
   <main>
-    <section>
-      <h3 id="about">About</h3>
+    <section id="home">
+      <h3>Home</h3>
       <div class="box">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
@@ -33,24 +33,22 @@
           officiis quisquam quae ea iusto obcaecati. Quidem, qui! Dignissimos
           dolorum doloremque consequatur!
         </p>
-        <ul class="direction">
+        <ol class="direction">
           <li>Education</li>
           <li>Working experience</li>
           <li>Certificates</li>
           <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        </ol>
       </div>
     </section>
-    <section>
-      <h3 id="interests">Interests</h3>
+    <section id="about">
+      <h3>About</h3>
       <div class="img-box">
         <a href="https://www.alleycat.org/" target="_blank">
-          <img src="./images/cat2.jpg" alt="Link to organization for saving stray cats" />
+          <img src="../images/cat2.jpg" alt="Link to organization for saving stray cats" />
         </a>
       </div>
-      <div class="img-box">
+      <div class="text-box">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Dignissimos, officiis.
@@ -60,10 +58,10 @@
       <div class="img-box">
         <a href="https://www.healthline.com/nutrition/top-evidence-based-health-benefits-of-coffee#2.-May-be-linked-to-a-lower-risk-of-type-2-diabetes"
           target="_blank">
-          <img src="./images/coffee.jpg" alt="A cup of coffee with milk and heart drawn on top of the cup" />
+          <img src="../images/coffee.jpg" alt="A cup of coffee with milk and heart drawn on top of the cup" />
         </a>
       </div>
-      <div class="img-box">
+      <div class="text-box">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Dignissimos, officiis.
@@ -72,30 +70,33 @@
       <br>
       <div class="img-box">
         <a href="https://health.clevelandclinic.org/everything-you-want-to-know-about-pilates/" target="_blank">
-          <img src="./images/pilates.jpg" alt="My favorite sport is pilates" />
+          <img src="../images/pilates.jpg" alt="My favorite sport is pilates" />
         </a>
       </div>
-      <div class="img-box">
+      <div class="text-box">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Dignissimos, officiis.
         </p>
       </div>
     </section>
-    <section>
-      <h3 id="contact">Contact</h3>
+    <section id="contact">
+      <h3>Contact</h3>
       <ul>
         <li>
-          <img src="" alt="LinkedIn logo" />
+          <img src="placeholder-linkedin-logo.png" alt="LinkedIn logo" />
           <a href="https://www.linkedin.com/in/ana-popova-5a4459b4/" target="_blank">LinkedIn</a>
         </li>
         <li>
-          <img src="" alt="GitHub logo" />
+          <img src="placeholder-github-logo.png" alt="GitHub logo" />
           <a href="https://github.com/AniPopova" target="_blank">GitHub</a>
         </li>
       </ul>
     </section>
   </main>
+  <footer id="footer">
+    <p>&copy; 2023 Ana Popova. Free to copy and use.</p>
+  </footer>
 </body>
 
 </html>
