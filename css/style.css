@@ -18,6 +18,10 @@ html {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h3 {
+  text-align: Left;
+}
+
 section {
   padding: 20px;
   text-align: center;
@@ -28,28 +32,29 @@ section ul li {
   list-style: none;
   text-decoration: none;
 }
- .navbar {
+ .menu {
   list-style: none;
   text-align: center;
-  margin: 0;
-  padding: 0;
   background: rgb(7, 5, 64);
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
   top: 0;
   right: 0;
   left: 0;
   cursor: pointer;
 }
-.navbar li {
+.menu li {
   float: right;
 }
-.navbar li a{
-  display: block;
+.menu li a{
+  display: flex;
   color: #fff;
   text-decoration: none;
   padding: 15px 20px;
 }
-.navbar li a:hover {
+.menu li a:hover {
   background-color: bisque;
   color: black;
 }
@@ -74,17 +79,18 @@ img {
  .img-box{
   list-style: none;
   width: 32.8%;
-  list-style: none;
-  text-align: center;
-  display: inline-block;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 20px;
   margin-bottom: 15px;
-  position: flex-box;
+  position: flex;
 }
+
 .text-box{
   list-style: none;
   width: 32.8%;
-  list-style: none;
   text-align: left;
   display: inline-block;
   padding: 20px;
@@ -174,9 +180,7 @@ img {
     display: none;
   }
 }
-h3 {
-  text-align: Left;;
-}
+
 #contact {
   font-size: 14px;
 }
