@@ -2,23 +2,21 @@
   margin: 0;
   padding: 0;
   border: 5px  black thin;
-  background-image: url(./images/optional.jpeg);
 }
 
 html {
   scroll-padding-top: 70px;
+
 }
 
-body {
-  background-image: url("optional.jpeg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
 #main_page {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url("/images/optional.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 section {
@@ -61,6 +59,7 @@ section ul li {
   }
 .box{
   font-size: 14px;
+  border-style: none;
 }
 img {
   display: block;
@@ -83,7 +82,7 @@ img {
   position: flex-box;
 }
 #contact {
-  font-size: 12px;
+  font-size: 13px;
 }
 #contact img {
   box-shadow: none;
