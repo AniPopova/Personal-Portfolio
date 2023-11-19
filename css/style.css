@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   border: 5px black thin;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Literata', Arial, sans-serif;
 }
 
 html {
@@ -12,15 +12,11 @@ html {
 h1 {
   text-align: center;
   font-size: 24px;
-  /* font-style: oblique; */
-  font-family: 'Literata', Arial, sans-serif;
 }
-
 
 h2 {
   text-align: Left;
   font-size: 18px;
-  font-family: 'Literata', sans-serif;
 }
 
 section {
@@ -34,31 +30,19 @@ section ul li {
   text-decoration: none;
 }
 
-/* .main_page {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url("../images/optional.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 50px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} */
-
 .main_page {
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 500px;
   margin: 0;
   padding-top: 50px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url("../images/optional.jpeg") center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+    url("../images/optional.jpeg") center / cover;
 }
 
 .home {
   padding: 20px;
-  /* Adjust padding as needed */
+  border: rgb(92, 10, 10) solid;
 }
 
 .container {
@@ -66,15 +50,22 @@ section ul li {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  /* Adjust padding as needed */
+}
+
+.container ol li {
+  padding: 7px;
+  border: rgb(92, 10, 10) solid;
+  display: flexbox;
+  flex-direction: column;
+
 }
 
 .menu {
   list-style: none;
   text-align: center;
-  background: rgb(7, 5, 64);
   position: fixed;
   display: none;
+  background: rgb(7, 5, 64);
   flex-direction: row;
   align-items: center;
   flex: 1;
@@ -94,32 +85,10 @@ section ul li {
 .menu li a:hover {
   background-color: bisque;
   color: black;
-  transition: 0.75s;
+  transition: 0.5s;
 }
 
-.box {
-  display: flex;
-  border: #333 solid;
-  font-size: 14px;
-  border-style: none;
-  text-align: left;
-  padding: 0px 5px 0px 5px;
-
-}
-
-.box ol li {
-  padding: 7px;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-
-img {
+.my-portrait {
   display: flex;
   width: 250px;
   height: 250px;
@@ -128,21 +97,17 @@ img {
   padding: 0px 7px 0px 7px;
 }
 
-.img-box {
-  list-style: none;
-  display: flex;
-  border-radius: 7px;
-  padding: 20px;
-  margin-bottom: 15px;
-}
-
 .text-box {
+  background-color: bisque;
   list-style: none;
   width: 32.8%;
   text-align: left;
-  display: block;
+  display: grid;
+  font-style: oblique;
+  flex-direction: column;
   padding: 20px;
   margin-bottom: 15px;
+  border: rgb(92, 10, 10) solid;
 }
 
 .header .menu-icon {
@@ -234,12 +199,12 @@ img {
 
 .contact {
   font-size: 14px;
-  display: flexbox;
+  display: grid;
 }
 
 .form {
   border: rgb(92, 10, 10) solid;
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   text-align: left;
@@ -251,13 +216,32 @@ label {
   align-self: start;
   padding-left: 2px;
   font:
-    1rem 'Fira Sans',
+    1rem 'Lucida Grande',
     sans-serif;
 }
+
+.important {
+  color: rgb(92, 10, 10) solid;
+  font-family: fantasy;
+  font-size: 18px;
+}
+
+.important:hover {
+  color: blue;
+  transition: 0.7s ease-in-out;
+
+}
+
 button {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+input {
   border-radius: 5px;
   margin-bottom: 5px;
 }
+
 .logo {
   display: flex;
   flex-direction: column;
