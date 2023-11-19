@@ -2,15 +2,25 @@
   margin: 0;
   padding: 0;
   border: 5px black thin;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
   scroll-padding-top: 70px;
 }
 
-h3 {
+h1 {
+  text-align: center;
+  font-size: 24px;
+  /* font-style: oblique; */
+  font-family: 'Literata', Arial, sans-serif;
+}
+
+
+h2 {
   text-align: Left;
-  font-family: fantasy;
+  font-size: 18px;
+  font-family: 'Literata', sans-serif;
 }
 
 section {
@@ -39,22 +49,26 @@ section ul li {
   margin: 0;
   padding-top: 50px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-              url("../images/optional.jpeg") center;
-              background-repeat: no-repeat;
-              background-size: cover;
-              display: flex;
+    url("../images/optional.jpeg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   flex-direction: column;
 }
+
 .home {
-  padding: 20px; /* Adjust padding as needed */
+  padding: 20px;
+  /* Adjust padding as needed */
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px;
+  /* Adjust padding as needed */
 }
+
 .menu {
   list-style: none;
   text-align: center;
@@ -80,16 +94,21 @@ section ul li {
 .menu li a:hover {
   background-color: bisque;
   color: black;
-} 
+  transition: 0.75s;
+}
 
 .box {
+  display: flex;
+  border: #333 solid;
   font-size: 14px;
   border-style: none;
   text-align: left;
+  padding: 0px 5px 0px 5px;
+
 }
 
 .box ol li {
-  padding: 3px;
+  padding: 7px;
 }
 
 .container {
@@ -101,12 +120,12 @@ section ul li {
 }
 
 img {
-  display: block;
-  width: 100%;
+  display: flex;
+  width: 250px;
   height: 250px;
-  border-radius: 7px;
-  box-shadow: 5px -3px lightgrey;
-  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px -3px lightgoldenrodyellow;
+  padding: 0px 7px 0px 7px;
 }
 
 .img-box {
@@ -115,7 +134,6 @@ img {
   border-radius: 7px;
   padding: 20px;
   margin-bottom: 15px;
-  cursor: pointer;
 }
 
 .text-box {
@@ -216,14 +234,39 @@ img {
 
 .contact {
   font-size: 14px;
+  display: flexbox;
 }
 
+.form {
+  border: rgb(92, 10, 10) solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: space-around;
+}
+
+label {
+  display: block;
+  align-self: start;
+  padding-left: 2px;
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+button {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
 .logo {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: rgb(92, 10, 10) solid;
   box-shadow: none;
   width: 100%;
   height: 100%;
-  border-radius: 7px; 
+  border-radius: 7px;
   justify-content: center;
   cursor: pointer;
 }

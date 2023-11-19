@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Welcome to my portfolio" />
   <meta name="keywords" content="person, software engineer, developer, Ana, Bulgaria" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
   <link rel="stylesheet" href="./css/style.css" />
   <title>My portfolio | Ana Popova</title>
 </head>
@@ -22,15 +23,17 @@
   </header>
   <main>
     <section class="home">
-      <h3>Home</h3>
+      <h1>Me, myself and I</h1>
+      <h2>Intro</h2>
       <div class="container">
-        <p>
+        <img src="./images/ani.jpg" alt="Picture of me on a ble background.">
+        <p class="box">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
           sunt commodi repellat qui eum repellendus assumenda, ut soluta,
           officiis quisquam quae ea iusto obcaecati. Quidem, qui! Dignissimos
           dolorum doloremque consequatur!
         </p>
-        <ol>
+        <ol class="box">
           <li>Education</li>
           <li>Working experience</li>
           <li>Certificates</li>
@@ -38,7 +41,7 @@
       </div>
     </section>
     <section class="about">
-      <h3>About</h3>
+      <h2>About</h2>
       <div class="container">
         <div class="text-box">
           <p>
@@ -69,13 +72,27 @@
       </div>
     </section>
     <section class="contact">
-      <h3>Contact</h3>
+      <h2>Contact</h2>
+      <h3>If you want to contact me please choose one of the following options!<h3>
       <div class="container">
         <a href="https://www.linkedin.com/in/ana-popova-5a4459b4/" target="_blank"><img class="logo"
             src="./images/linkedin.png" alt="LinkedIn logo" /></a>
-        <br>
-        <a href="https://github.com/AniPopova" target="_blank"><img class="logo" src="./images/github.png"
-            alt="GitHub logo" /></a>
+        <br>        <a href="https://github.com/AniPopova" target="_blank"><img class="logo" src="./images/github3.png"
+          alt="GitHub logo" /></a>
+          <br>
+        <form class="form" action="" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me more" rows="3"></textarea>
+          <br>
+          <button>Send</button>
+        </form>
+
       </div>
     </section>
   </main>
