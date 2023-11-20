@@ -6,59 +6,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Welcome to my portfolio" />
   <meta name="keywords" content="person, software engineer, developer, Ana, Bulgaria" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>My portfolio | Ana Popova</title>
 </head>
 
-<body class="main_page">
+<body class="main-page">
   <header class="header">
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <nav class="nav-bar">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+      </label><span class="navicon">
+      </span>
+      </label>
+      <div class="menu-tabs">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
   <main>
-    <section class="home">
+    <section>
       <h1 id="home">Me, myself and I</h1>
       <h2>Home</h2>
       <div class="container">
-        <img class="my-portrait" src="./images/ani.jpg" alt="Picture of me on a ble background.">
+        <img class="my-portrait" src="./images/ani.jpg" alt="Picture of me on a ble background." />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore,
-          sunt commodi repellat qui eum repellendus assumenda, ut soluta,
-          officiis quisquam quae ea iusto obcaecati. Quidem, qui! Dignissimos
-          dolorum doloremque consequatur!
+          I'm a 40-year-old with a deep passion for coding and an ambitious dream to become a great developer. Cats hold
+          a special place in my heart, bringing joy and companionship to my life. Beyond the world of programming, I
+          find immense pleasure in exploring foreign countries and embarking on exciting journeys. There's a mysterious
+          side to me that adds a unique flavor to my personality. Join me on this captivating adventure as I navigate
+          the realms of technology, travel, and the delightful world of cats
         </p>
       </div>
       <div class="container">
-          <button class="btn">Education</button>
-          <button class="btn">Working experience</button>
-          <button class="btn">Certificates</button>
+        <a href="https://drive.google.com/file/d/1-7ItnMn2heCXcNvLP-sFtVJnYcphVDxM/view?usp=sharing"
+          target="_blank"><button class="btn">Education</button></a>
+      </div>
+      <div class="container">
+        <a href="https://drive.google.com/file/d/1yS-EC1vo4ve-OVmXDD81gb33kAqFUbJN/view?usp=sharing"
+          target="_blank"><button class="btn">Working experience</button></a>
+      </div>
+      <div class="container">
+        <a href="https://drive.google.com/file/d/1-5oMZL9PLUeoqjJvb-RYKLUqKCzirOR1/view?usp=sharing" target="_blank">
+          <button class="btn">Certificates</button></a>
       </div>
     </section>
-    <section class="about">
+    <section>
       <h2 id="about">About</h2>
       <div class="container">
-        <div class="text-box">
+        <div class="container">
           <h3>Charity</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, eveniet incidunt autem sapiente aut quae
-            officiis quidem hic ipsa, ipsam saepe excepturi officia, similique voluptate tenetur nobis nihil corrupti
-            esse maiores dolorem? Obcaecati quasi aliquam culpa voluptatem maxime illo quaerat vitae aut quo possimus,
-            debitis pariatur, dolorem, at fuga quos.<a href="https://www.alleycat.org/" target="_blank"><img src="..images/cat2.jpg" alt=""></a>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Delectus, eveniet incidunt autem sapiente aut quae officiis quidem
+            hic ipsa, ipsam saepe excepturi officia, similique voluptate
+            tenetur nobis nihil corrupti esse maiores dolorem? Obcaecati quasi
+            aliquam culpa voluptatem maxime illo quaerat vitae aut quo
+            possimus, debitis pariatur, dolorem, at fuga quos.
           </p>
+          <!-- <a class="img" href="https://www.alleycat.org/" target="_blank"><img
+                src="../images/cat2.jpg" alt="" /></a> -->
         </div>
-        <div class="text-box">
+        <div class="container">
           <h3>Hobbies</h3>
+          <br>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro perspiciatis temporibus veritatis
-            blanditiis quam expedita. Ab ratione quo expedita atque recusandae quibusdam quaerat cupiditate suscipit
-            accusantium architecto? Veniam autem eos ipsam vero fugiat laborum repudiandae? Laborum repellat officia
-            consectetur tempore recusandae perferendis repudiandae culpa eos? Sed minus et corporis!
+            Well, I do not like many things. My hobbies are drawing, pilates, beer with friends, traveling
           </p>
         </div>
       </div>
@@ -66,37 +81,43 @@
     <section class="contact">
       <h2 id="contact">Contact</h2>
       <div class="container">
-        <em>If you want to contact me please choose one of the following options!</em>
-        </div>
-          <div class="container">
-            <a href="https://www.linkedin.com/in/ana-popova-5a4459b4/" target="_blank"><img class="logo"
-                src="./images/linkedin.png" alt="LinkedIn logo" /></a>
+        <p class="contact-content-box">
+          <em>
+            If you want to contact me please choose one of the following
+            options!
+          </em>
+        </p>
+      </div>
+      <div class="container">
+        <a href="https://www.linkedin.com/in/ana-popova-5a4459b4/" target="_blank"><img class="logo"
+            src="./images/linkedin.png" alt="LinkedIn logo" />
+        </a>
+        <div class="container">
+          <form class="form" action="" method="post">
             <div>
-            <form class="form" action="" method="post">
-              <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required />
-              </div>
-              <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell me more" rows="3"></textarea>
-              </div>
-              <div>
-                <label for="nonsence">Please do not waste my time.</label>
-                <input type="checkbox" name="do not add harmful message" id="nonsence" required>
-                <button class="btn submit">Send</button>
-              </div>
-            </form>
-          </div>
-            <div>
-              <a href="https://github.com/AniPopova" target="_blank"><img class="logo" src="./images/github.png"
-                alt="GitHub logo" /></a>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" />
             </div>
-          </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me more" rows="3"></textarea>
+            </div>
+            <div class="submit">
+              <label for="nonsence">Please do not waste my time.</label>
+              <input type="checkbox" name="do not add harmful message" id="nonsence" required />
+              <button class="btn submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="container">
+          <a href="https://github.com/AniPopova" target="_blank"><img class="logo" src="./images/github.png"
+              alt="GitHub logo" /></a>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">

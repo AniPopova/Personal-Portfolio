@@ -11,17 +11,17 @@ html {
 
 h1 {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5em; 
 }
 
 h2 {
-  text-align: Left;
-  font-size: 18px;
+  text-align: left;
+  font-size: 1.2em; 
 }
 
 h3 {
   text-align: center;
-  font-size: 16px;
+  font-size: 1em; 
 }
 
 section {
@@ -30,11 +30,11 @@ section {
   border: 2px black solid;
 }
 
-.main_page {
+.main-page {
   display: grid;
   min-height: auto;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 0px;
   background: linear-gradient(to right, rgba(248, 243, 243, 0.7), rgba(255, 255, 255, 0.7)),
     url("../images/unsplash.jpg") center / cover, no-repeat;
 }
@@ -47,25 +47,36 @@ section {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   align-content: center;
   padding: 10px;
 }
 
-.menu {
-  /* display: flex;
+.header.nav-bar {
+  display: flex;
+  position: fixed;
+  width: 100%; 
+  z-index: 1000; 
+}
+
+.nav-bar {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: left;
+  align-items: center;
   align-content: center;
-  padding: 10px 10px; */
+  background: rgb(7, 5, 64);
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-bar.menu-tabs {
   list-style: none;
   text-align: center;
   margin-top: 0;
   position: fixed;
   display: none;
-  background: rgb(7, 5, 64);
   flex-direction: row;
   align-items: center;
   flex: 1;
@@ -75,14 +86,14 @@ section {
   cursor: pointer;
 }
 
-.menu li a {
-  display: flex;
-  color: #fff;
+.menu-tabs a {
+  display: flexbox;
   text-decoration: none;
+  color: white;
   padding: 15px 20px;
 }
 
-.menu li a:hover {
+.menu-tabs a:hover {
   background-color: bisque;
   color: black;
   transition: 0.5s;
@@ -90,13 +101,14 @@ section {
 
 .my-portrait {
   display: block;
-  width: 250px;
+  max-width: 200px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 10px 5px 5px rgb(100, 92, 92, 0.7)
+  box-shadow: 10px 5px 5px rgba(100, 92, 92, 0.7);
 }
 
-.text-box {
+/* .text-box {
   width: 32.8%;
   text-align: left;
   display: flex;
@@ -104,25 +116,20 @@ section {
   font-style: oblique;
   padding: 20px;
   margin-bottom: 15px;
-}
+} */
 
-.text-box:hover{
+.text-box:hover {
   background-color: rgb(174, 154, 154, 0.3);
   transform: scale(1.05);
 }
 
 .btn {
-  transform: 0,5s;
-  display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
-  gap: 1em;
-  justify-content: space-around;
   padding: 5px;
   margin: 3px;
   box-shadow: 10px 5px 5px rgb(100, 92, 92, 0.7);
 }
-.header .menu-icon {
+
+.nav-bar.menu-icon {
   cursor: pointer;
   display: inline-block;
   padding: 28px 20px;
@@ -130,7 +137,7 @@ section {
   user-select: none;
 }
 
-.header .menu-icon .navicon {
+.nav-bar.menu-icon .navicon {
   background: #333;
   display: block;
   height: 2px;
@@ -139,8 +146,8 @@ section {
   width: 18px;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+.nav-bar.menu-icon .navicon:before,
+.nav-bar.menu-icon .navicon:after {
   background: #333;
   content: '';
   display: block;
@@ -150,75 +157,72 @@ section {
   width: 100%;
 }
 
-.header .menu-icon .navicon:before {
+.nav-bar.menu-icon .navicon:before {
   top: 5px;
 }
 
-.header .menu-icon .navicon:after {
+.nav-bar.menu-icon .navicon:after {
   top: -5px;
 }
 
-.header .menu-btn {
+.nav-bar.menu-btn {
   display: none;
 }
 
-.header .menu-btn:checked~.menu {
+.nav-bar.menu-btn:checked~.menu {
   max-height: 240px;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon {
+.nav-bar.menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:before {
+.nav-bar.menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:after {
+.nav-bar.menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-/* .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+.nav-bar.menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.nav-bar.menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
-} */
+}
 
 @media (min-width: 768px) {
-  .header li {
+  .menu-tabs a {
     list-style: none;
     text-decoration: none;
     float: left;
   }
 
-  .header li a {
+  .menu-tabs a {
     text-decoration: none;
     padding: 20px 30px;
   }
 
-  .header .menu {
+  .header.nav-bar.menu-tabs a {
     clear: none;
     float: right;
     max-height: none;
     display: flex;
   }
 
-  .header .menu-icon {
+  .nav-bar.menu-icon {
     display: none;
   }
 }
 
 .contact {
-  font-size: 14px;
+  font-size: 0.875em; 
   background-color: rgba(99, 41, 41, 0.2);
   border: none;
 }
 
 .form {
-  /* border: rgb(92, 10, 10, 0.9) solid; */
   text-align: center;
   display: block;
-
-
 }
 
 label {
@@ -226,16 +230,15 @@ label {
   align-self: start;
   margin: 0px 5px;
   padding: 0px 10px;
-  font-family:  1rem 'Lucida Grande',
-  sans-serif;
-  font-size: 12px;
+  font-family: 1rem 'Lucida Grande', sans-serif;
+  font-size: 0.75em; 
   font-weight: 900;
 }
 
 .contact-content-box {
   color: rgb(92, 10, 10) solid;
   font-family: fantasy;
-  font-size: 14px;
+  font-size: 0.875em; 
   display: flexbox;
   flex-wrap: wrap;
   align-items: center;
@@ -245,17 +248,6 @@ label {
 .contact-content-box:hover {
   color: blue;
   transition: 0.7s ease-in-out;
-
-}
-
-button:hover{
-  position: fixed;
-  background-color: silver;
-  color: black;
-  transition: 0.5s;
-  border-radius: 5px;
-  margin: 5px;
-  padding: auto;
 }
 
 input {
@@ -264,33 +256,28 @@ input {
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* border: rgb(92, 10, 10) solid; */
   width: 100%;
   height: 100%;
   border-radius: 7px;
   cursor: pointer;
 }
 
-.logo:hover{
+.logo:hover {
   background-color: silver;
   transition: 0.5s;
 }
-.submit{
+
+.btn.submit {
   display: flex;
   align-items: center;
-justify-content: center;
-
-flex-wrap: wrap;
-align-content: center;
-
+  justify-content: center;
 }
+
 .footer {
   background-color: black;
-  font: bold 10px;
+  font: bold 0.625em; 
   color: rgb(128, 18, 18);
   text-align: center;
 }
+
+
