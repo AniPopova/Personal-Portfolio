@@ -10,13 +10,13 @@
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-bottom: 20px;
 } 
 
  body {
   background: linear-gradient(to right, rgba(248, 243, 243, 0.6), rgba(255, 255, 255, 0.9)),
-    url("../images/tom-barrett-hgGplX3PFBg-unsplash.jpg") center / cover;
+    url("../images/yannis-papanastasopoulos-U6dnImauDAE-unsplash.jpg") center / cover;
 }
 
 /* NAVBAR */
@@ -50,14 +50,13 @@
   display: block;
   padding: 20px;
   text-decoration: none;
-  color: white; /* Set text color to white */
+  color: white; 
 }
 
 .nav-btn:hover,
 .menu-btn:hover {
   background-color: bisque;
 }
-
 
 .menu-icon {
   display: none;
@@ -66,8 +65,6 @@
 .menu-btn {
   display: none;
 }
-
-
 
 .menu-tabs {
   display: flex;
@@ -133,20 +130,9 @@ a browser's user interface (its chrome), except in textboxes. */
 }
 
 /* HOME SECTION */
-.home-section {
-  display: flex;
-  text-align: center;
+.section-area.home {
   padding-top: 70px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  padding-bottom: 0;
 }
 
 .home-section .home-headline {
@@ -161,7 +147,6 @@ a browser's user interface (its chrome), except in textboxes. */
 
 .home-content {
   padding: 25px;
-
 }
 
 .btn-container {
@@ -174,7 +159,6 @@ a browser's user interface (its chrome), except in textboxes. */
   text-decoration: none;
 }
 
-
 .my-portrait {
   width: 100%;
   height: auto;
@@ -183,17 +167,6 @@ a browser's user interface (its chrome), except in textboxes. */
 }
 
 /* EDUCATION SECTION */
-
-.education-section {
-  display: flex;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .education-text-container {
   display: flex;
@@ -228,17 +201,25 @@ a browser's user interface (its chrome), except in textboxes. */
 
 /* EXPERIENCE*/
 
-.experience-section {
+.events-section {
   display: flex;
   text-align: center;
-  font-size: 1rem;
   padding-top: 40px;
   padding-bottom: 40px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+.education-section {
+  display: flex;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
+}
 .experience-content {
   display: flex;
   flex-wrap: wrap;
@@ -257,33 +238,24 @@ a browser's user interface (its chrome), except in textboxes. */
 
 /* EVENTS */
 
-.events-section {
-  display: flex;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .events-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 12px;
   gap: 10px;
   padding: 10px;
   margin: 5px;
   border: 2px solid whitesmoke;
   border-radius: 8px;
-  /* transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .events-content:hover {
   transform: scale(1.1); 
-  background-color: rgb(219, 136, 136, 0.7);
+  background-color: rgba(145, 202, 158, 0.7);
+  font-size: 14px;
 }
 
 .events-text-container {
@@ -374,11 +346,15 @@ a browser's user interface (its chrome), except in textboxes. */
 
 /* SECTION STYLES */
 
-.section {
-  text-align: right;
-  padding: 40px 0;
+.section-area {
   display: flex;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
