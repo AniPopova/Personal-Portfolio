@@ -5,45 +5,21 @@
   box-sizing: border-box;
 }
 
-/* NAVBAR */
-/* .nav-list {
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-
-  width: 100%;
-  padding: 15px;
-  background-color: #080808;
-}
-
-.list-item {
-
-  /* float: left; */
-/* list-style-type: none;
-}
-
-.nav-btn {
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-*/
 .headline {
   flex-basis: 100%;
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
+  padding-left: 10px;
   padding-bottom: 20px;
 } 
+
  body {
-  background: linear-gradient(to right, rgba(248, 243, 243, 0.7), rgba(255, 255, 255, 0.99)),
-    url("../images/jr-korpa-9XngoIpxcEo-unsplash.jpg") center / cover;
+  background: linear-gradient(to right, rgba(248, 243, 243, 0.6), rgba(255, 255, 255, 0.9)),
+    url("../images/tom-barrett-hgGplX3PFBg-unsplash.jpg") center / cover;
 }
 
-
-/* header */
-
+/* NAVBAR */
 .header {
   background-color: black;
   position: fixed;
@@ -51,131 +27,116 @@
   z-index: 3;
 }
 
-.header ul {
+.menu-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
   overflow: hidden;
   background-color: black;
-  color: aliceblue;
 }
 
-.header li a {
-  display: block;
-  padding: 20px 20px;
+.list-item {
   border-right: 1px solid black;
-  text-decoration: none;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
+.nav-btn {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white; /* Set text color to white */
+}
+
+.nav-btn:hover,
+.menu-btn:hover {
   background-color: bisque;
 }
 
-/* menu */
 
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+.menu-icon {
+  display: none;
 }
 
-/* menu icon */
+.menu-btn {
+  display: none;
+}
 
-.header .menu-icon {
+
+
+.menu-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.nav-btn {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: white; /* Set text color to white */
+}
+
+.nav-btn:hover,
+.menu-btn:hover {
+  background-color: bisque;
+}
+/* The user-select CSS property controls whether the user can select text. This doesn't have any effect on content loaded as part of 
+a browser's user interface (its chrome), except in textboxes. */
+.menu-icon {
   cursor: pointer;
-  display: inline-block;
-  float: right;
+  display: none; 
   padding: 28px 20px;
-  position: relative;
   user-select: none;
 }
 
-.header .menu-icon .navicon {
-  background:white;
+.menu-icon .navicon {
+  background: white;
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: background 0.2s ease-out;
   width: 18px;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
   background: white;
   content: '';
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
-.header .menu-icon .navicon:before {
+.menu-icon .navicon:before {
   top: 5px;
 }
 
-.header .menu-icon .navicon:after {
+.menu-icon .navicon:after {
   top: -5px;
 }
 
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked~.menu {
-  max-height: 240px;
-}
-
-.header .menu-btn:checked~.menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked~.menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked~.menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* 48em = 768px */
-
-@media (min-width: 768px) {
-  .header .list-item {
-    float: left;
-  }
-
-  .header .list-item .nav-button {
-    padding: 20px 30px;
-  }
-
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-
-  .header .menu-icon {
-    display: none;
-  }
-}
-
-
 /* HOME SECTION */
-
 .home-section {
   display: flex;
   text-align: center;
   padding-top: 70px;
-  border: rgb(92, 10, 10) solid;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -228,7 +189,6 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  border: rgb(92, 10, 10) solid;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -249,17 +209,10 @@
   padding: 20px 0px 20px 0px;
 }
 
-@media (min-width: 768px) {
-  .education-content {
-    flex-direction: row;
-  }
-
-}
-
 .additional-headline {
   text-decoration: none;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.2rem;
 }
 
 .btn {
@@ -278,10 +231,9 @@
 .experience-section {
   display: flex;
   text-align: center;
-  font-size: 12px;
+  font-size: 1rem;
   padding-top: 40px;
   padding-bottom: 40px;
-  border: rgb(92, 10, 10) solid;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -300,7 +252,6 @@
 .experience-text-container {
   display: flex;
   flex-direction: column;
-  border: #420808;
 }
 
 
@@ -309,10 +260,8 @@
 .events-section {
   display: flex;
   text-align: center;
-
   padding-top: 40px;
   padding-bottom: 40px;
-  border: rgb(92, 10, 10) solid;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -321,11 +270,20 @@
 .events-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  font-size: 12px;
-  gap: 20px;
-  padding: 20px;
+  font-size: 1.2rem;
+  gap: 10px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  /* transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; */
+}
+
+.events-content:hover {
+  transform: scale(1.1); 
+  background-color: rgb(219, 136, 136, 0.7);
 }
 
 .events-text-container {
@@ -338,7 +296,6 @@
 }
 
 /* FOOTER */
-
 .footer-content {
   display: flex;
   justify-content: space-evenly;
@@ -355,46 +312,13 @@
 
 
 /* LOGO STYLING */
+
 .footer-logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 40%;
-  height: 40%;
+  width: 20px;
   cursor: pointer;
 }
 
 .logo {
-  width: 75px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.logo-pu {
-  width: 75px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.logo-cc {
-  width: 75px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.logo-jp {
-  width: 75px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.logo-poliglot {
-  width: 75px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.logo-jbeer {
   width: 75px;
   border-radius: 7px;
   cursor: pointer;
@@ -407,11 +331,10 @@
   .home-text-container {
     flex-direction: row;
     padding: 50px;
-
   }
 
   .my-portrait {
-    width: 40%;
+    width: 20%;
   }
 
   .events-text-container {
@@ -419,6 +342,27 @@
     padding: 50px;
   }
 
+
+  .menu {
+    flex-direction: row;
+    max-height: none;
+  }
+
+  .list-item {
+    float: left;
+  }
+
+  .nav-btn {
+    padding: 20px 30px;
+  }
+  
+  .menu-btn {
+    display: none; 
+  }
+
+  .education-content {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -433,7 +377,24 @@
 .section {
   text-align: right;
   padding: 40px 0;
-  border: rgb(92, 10, 10) solid;
   display: flex;
   flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .menu-icon {
+    display: inline-block; /* Display the hamburger icon on small screens */
+  }
 }
