@@ -12,9 +12,9 @@
   font-size: 1.2rem;
   padding-left: 20px;
   padding-bottom: 20px;
-} 
+}
 
- body {
+body {
   background: linear-gradient(to right, rgba(248, 243, 243, 0.6), rgba(255, 255, 255, 0.9)),
     url("../images/yannis-papanastasopoulos-U6dnImauDAE-unsplash.jpg") center / cover;
 }
@@ -50,7 +50,7 @@
   display: block;
   padding: 20px;
   text-decoration: none;
-  color: white; 
+  color: white;
 }
 
 .nav-btn:hover,
@@ -85,18 +85,20 @@
   display: block;
   padding: 20px;
   text-decoration: none;
-  color: white; /* Set text color to white */
+  color: white;
+  /* Set text color to white */
 }
 
 .nav-btn:hover,
 .menu-btn:hover {
   background-color: bisque;
 }
+
 /* The user-select CSS property controls whether the user can select text. This doesn't have any effect on content loaded as part of 
 a browser's user interface (its chrome), except in textboxes. */
 .menu-icon {
   cursor: pointer;
-  display: none; 
+  display: none;
   padding: 28px 20px;
   user-select: none;
 }
@@ -210,6 +212,7 @@ a browser's user interface (its chrome), except in textboxes. */
   justify-content: center;
   align-items: center;
 }
+
 .education-section {
   display: flex;
   text-align: center;
@@ -220,6 +223,7 @@ a browser's user interface (its chrome), except in textboxes. */
   align-items: center;
 
 }
+
 .experience-content {
   display: flex;
   flex-wrap: wrap;
@@ -253,7 +257,7 @@ a browser's user interface (its chrome), except in textboxes. */
 }
 
 .events-content:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   background-color: rgba(145, 202, 158, 0.7);
   font-size: 14px;
 }
@@ -327,9 +331,9 @@ a browser's user interface (its chrome), except in textboxes. */
   .nav-btn {
     padding: 20px 30px;
   }
-  
+
   .menu-btn {
-    display: none; 
+    display: none;
   }
 
   .education-content {
@@ -366,11 +370,12 @@ a browser's user interface (its chrome), except in textboxes. */
     transition: max-height 0.2s ease-out;
   }
 
-  .menu-btn:checked ~ .menu {
+  .menu-btn:checked~.menu {
     max-height: 240px;
   }
 
   .menu-icon {
-    display: inline-block; /* Display the hamburger icon on small screens */
+    display: inline-block;
+    /* Display the hamburger icon on small screens */
   }
 }
