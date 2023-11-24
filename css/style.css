@@ -206,13 +206,12 @@ body {
 }
 
 /* CARDS */
-
 .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
+
 
 .card {
   width: 270px;
@@ -245,17 +244,6 @@ body {
   background-image: url('https://polyglot4dev.com/img/blog/blog-05.png');
 }
 
-
-.btn {
-  padding: 4px;
-  margin: 7px;
-  box-shadow: 2px 2px 2px 1px rgba(81, 11, 11, 0.2);
-  border-radius: 7px;
-  border-color: rgba(106, 49, 49, 0.7);
-  background-color: rgba(170, 173, 170, 0.3);
-  color: #6e1111;
-  text-decoration: none;
-}
 .btn.card {
   padding: 15px 20px;
   display: flex;
