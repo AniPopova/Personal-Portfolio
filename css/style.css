@@ -95,8 +95,6 @@ body {
   color: black;
 }
 
-/* The user-select CSS property controls whether the user can select text. This doesn't have any effect on content loaded as part of 
-a browser's user interface (its chrome), except in textboxes. */
 .menu-icon {
   cursor: pointer;
   display: none;
@@ -161,7 +159,7 @@ a browser's user interface (its chrome), except in textboxes. */
 }
 
 .my-portrait {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -282,7 +280,7 @@ a browser's user interface (its chrome), except in textboxes. */
 
   .section-content.event:hover {
     transform: scale(0.8);
-    background-color: rgba(145, 202, 158, 0.7);
+    background-color: rgba(100, 148, 110, 0.7);
     font-size: 14px;
   }
 
@@ -297,7 +295,7 @@ a browser's user interface (its chrome), except in textboxes. */
   }
 
   .my-portrait {
-    width: 50%;
+    width: 20%;
   }
 
   .menu {
