@@ -159,7 +159,7 @@ body {
 }
 
 .my-portrait {
-  width: 50%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -286,7 +286,6 @@ body {
 
 }
 
-
 /* MEDIA */
 @media (min-width: 768px) {
   .flex-container.home {
@@ -295,7 +294,7 @@ body {
   }
 
   .my-portrait {
-    width: 20%;
+    width: 40%;
   }
 
   .menu {
@@ -328,7 +327,7 @@ body {
 
 @media (min-width: 1024px) {
   .my-portrait {
-    width: 80%;
+    width: 20%;
   }
 
   .headline {
