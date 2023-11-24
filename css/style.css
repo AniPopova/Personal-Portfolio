@@ -21,7 +21,7 @@ body {
 
 /* NAVBAR */
 .header {
-  background-color: black;
+  background-color: #6e1111;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -39,11 +39,11 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #6e1111;
 }
 
 .list-item {
-  border-right: 1px solid black;
+  border-right: 1px solid #6e1111;
 }
 
 .nav-btn {
@@ -78,7 +78,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #6e1111;
 }
 
 .nav-btn {
@@ -205,12 +205,91 @@ body {
   color: wheat;
 }
 
+/* CARDS */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width: 270px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 3px solid whitesmoke;
+  box-shadow: 2px 2px 2px 1px #6e1111;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card-img {
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card_jprime {
+  background-image: url('https://jprime.io/images/slider/index2.jpg');
+}
+
+.card_javabeer {
+  background-image: url('https://1.bp.blogspot.com/-m4g5Q9WZuLw/YO7FxYJsnsI/AAAAAAAA6fs/nyDiNA_6EHMrPw3qRLJ7FcR1-MoC4rkZwCLcBGAsYHQ/s0/javabeer.jpg');
+}
+
+.card_polyglot {
+  background-image: url('https://polyglot4dev.com/img/blog/blog-05.png');
+}
+
+
+.btn {
+  padding: 4px;
+  margin: 7px;
+  box-shadow: 2px 2px 2px 1px rgba(81, 11, 11, 0.2);
+  border-radius: 7px;
+  border-color: rgba(106, 49, 49, 0.7);
+  background-color: rgba(170, 173, 170, 0.3);
+  color: #6e1111;
+  text-decoration: none;
+}
+.btn.card {
+  padding: 15px 20px;
+  display: flex;
+  width: auto;
+  border-radius: 15px;
+  border-color: rgba(147, 134, 134, 0.7) transparent;
+  box-shadow: 2px 2px 2px 1px rgba(81, 11, 11, 0.2);
+  text-align: center;
+}
+
+.btn.card:hover {
+  color: wheat;
+}
+
+.card:hover {
+  background-color: rgba(62, 62, 62, 0.7);
+  color: bisque;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 /* FOOTER */
 .section-content.footer {
   flex-direction: row;
   justify-content: space-around;
   color: white;
-  background-color: rgb(9, 9, 9, 0.9);
+  background-color: #6e1111;
   padding: 10px;
   gap: 0;
 }
