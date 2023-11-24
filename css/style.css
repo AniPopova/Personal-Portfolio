@@ -16,7 +16,7 @@
 
 body {
   background: linear-gradient(to right, rgba(248, 243, 243, 0.6), rgba(255, 255, 255, 0.9)),
-    url("../images/yannis-papanastasopoulos-U6dnImauDAE-unsplash.jpg") center / cover;
+    url("../images/unsplash.jpg") center / cover;
 }
 
 /* NAVBAR */
@@ -86,7 +86,7 @@ body {
   padding: 20px;
   text-decoration: none;
   color: white;
-  /* Set text color to white */
+  /* text color to white */
 }
 
 .nav-btn:hover,
@@ -101,7 +101,6 @@ a browser's user interface (its chrome), except in textboxes. */
   cursor: pointer;
   display: none;
   padding: 28px 20px;
-  user-select: none;
 }
 
 .menu-icon .navicon {
@@ -169,14 +168,11 @@ a browser's user interface (its chrome), except in textboxes. */
 }
 
 /* EDUCATION SECTION */
-.section-content.education {
-  flex-direction: row;
-}
 
 .additional-headline {
   text-decoration: none;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 14px;
 }
 
 .btn {
@@ -272,6 +268,11 @@ a browser's user interface (its chrome), except in textboxes. */
     background-color: rgba(145, 202, 158, 0.7);
     font-size: 14px;
   }
+
+  .section-content.education {
+    flex-direction: row;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -282,11 +283,6 @@ a browser's user interface (its chrome), except in textboxes. */
   .headline {
     font-size: 1.5rem;
   }
-
-  .section-content.education {
-    flex-direction: column;
-  }
-
 }
 
 /* SECTION COMMON STYLES */
@@ -339,4 +335,8 @@ a browser's user interface (its chrome), except in textboxes. */
     background-color: rgba(145, 202, 158, 0.7);
     font-size: 14px;
   }
+
+  /* .section-content.education {
+    flex-direction: column;
+  } */
 }
