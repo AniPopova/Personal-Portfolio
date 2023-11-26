@@ -27,13 +27,20 @@ body {
   z-index: 3;
 }
 
-.menu-tabs {
+.header .menu-tabs {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu {
+.header .menu-icon,
+.list-item.nav-btn {
+  cursor: pointer;
+  padding: 28px 20px;
+  user-select: none;
+}
+
+.header .menu {
   display: flex;
   list-style: none;
   margin: 0;
@@ -46,87 +53,122 @@ body {
   border-right: 1px solid #6e1111;
 }
 
-.nav-btn {
+.nav-btn,
+.menu-btn,
+.header .menu .nav-btn {
   display: block;
   padding: 20px;
   text-decoration: none;
   color: white;
+  transition: background-color 0.5s; /* Slower transition */
 }
 
 .nav-btn:hover,
-.menu-btn:hover {
-  background-color: bisque;
-}
-
-.menu-icon {
-  display: none;
-}
-
-.menu-btn {
-  display: none;
-}
-
-.menu-tabs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #6e1111;
-}
-
-.nav-btn {
-  display: block;
-  padding: 20px;
-  text-decoration: none;
-  color: white;
-  /* text color to white */
-}
-
-.nav-btn:hover,
-.menu-btn:hover {
+.menu-btn:hover,
+.header .menu .nav-btn:hover {
   background-color: bisque;
   color: black;
 }
 
-.menu-icon {
-  cursor: pointer;
+.menu-icon,
+.header.menu-tabs.menu-btn,
+.header.menu-icon {
   display: none;
-  padding: 28px 20px;
 }
 
-.menu-icon .navicon {
-  background: white;
+.header.menu-icon .navicon,
+.header .menu-icon .navicon {
+  background: #ffffff; 
   display: block;
   height: 2px;
   position: relative;
-  transition: background 0.2s ease-out;
+  transition: background 0.5s ease-out; /* Slower transition */
   width: 18px;
 }
 
-.menu-icon .navicon:before,
-.menu-icon .navicon:after {
-  background: white;
+.header.menu-icon .navicon:before,
+.header .menu-icon .navicon:before,
+.header.menu-icon .navicon:after,
+.header .menu-icon .navicon:after {
+  background: whitesmoke;
   content: '';
   display: block;
   height: 100%;
   position: absolute;
-  transition: all 0.2s ease-out;
+  transition: all 0.5s ease-out; /* Slower transition */
   width: 100%;
 }
 
-.menu-icon .navicon:before {
+.header.menu-icon .navicon:before,
+.header .menu-icon .navicon:before {
   top: 5px;
 }
 
-.menu-icon .navicon:after {
+.header.menu-icon .navicon:after,
+.header .menu-icon .navicon:after {
   top: -5px;
+}
+
+.header .menu-btn,
+.header.menu-tabs .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu,
+.header.menu-tabs .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon,
+.header.menu-tabs .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before,
+.header.menu-tabs .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after,
+.header.menu-tabs .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header.menu-tabs .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after,
+.header.menu-tabs .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header .menu,
+.header.menu-tabs .menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; /* Slower transition */
+}
+
+.header .menu .menu-list,
+.header.menu-tabs .menu .menu-list {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+}
+
+.header .menu .nav-btn,
+.header.menu-tabs .menu .nav-btn {
+  text-decoration: none;
+  color: whitesmoke; 
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.header .menu .nav-btn:hover,
+.header.menu-tabs .menu .nav-btn:hover {
+  background-color: bisque;
+  color: black;
 }
 
 /* HOME SECTION */
@@ -173,7 +215,6 @@ body {
 }
 
 /* EVENTS */
-
 .card-container {
   display: flex;
   justify-content: center;
@@ -188,7 +229,7 @@ body {
   box-shadow: 2px 2px 2px 1px #6e1111;
 }
 
-.card p {
+.card-text {
   padding: 10px;
 }
 
@@ -335,6 +376,18 @@ body {
     max-height: none;
   }
 
+  .header .menu-tabs {
+    flex-direction: row;
+  }
+
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu {
+    max-height: none;
+  }
+
   .list-item {
     float: left;
   }
@@ -343,7 +396,7 @@ body {
     padding: 20px 30px;
   }
 
-  .menu-btn {
+  .header .menu-btn {
     display: none;
   }
 
@@ -367,3 +420,4 @@ body {
     font-size: 1.5rem;
   }
 }
+
