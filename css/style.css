@@ -147,17 +147,6 @@ body {
   padding: 35px;
 }
 
-.btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-decoration: none;
-}
-
 .my-portrait {
   width: 50%;
   height: auto;
@@ -184,34 +173,12 @@ body {
 }
 
 /* EVENTS */
-.section-content.event {
-  flex-direction: row;
-  font-size: 12px;
-  gap: 20px;
-  margin: 10px;
-  border: 5px solid whitesmoke;
-  background-color: #6e1111;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
 
-.section-content.event:hover {
-  transform: scale(1.2);
-  background-color: rgba(145, 202, 158, 0.7);
-  font-size: 14px;
-}
-
-.section-content.event .btn-container {
-  color: wheat;
-}
-
-/* CARDS */
 .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 
 .card {
   width: 270px;
@@ -300,7 +267,7 @@ body {
 }
 
 
-/* SECTION COMMON STYLES */
+/* SECTIONs COMMON STYLES */
 .section-area {
   display: flex;
   text-align: center;
@@ -342,7 +309,6 @@ body {
 
   .menu-icon {
     display: inline-block;
-    /* Display the hamburger icon on small screens */
   }
 
   .section-content.event:hover {
@@ -394,7 +360,7 @@ body {
 
 @media (min-width: 1024px) {
   .my-portrait {
-    width: 20%;
+    width: 30%;
   }
 
   .headline {
